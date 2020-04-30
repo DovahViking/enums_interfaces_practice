@@ -8,19 +8,15 @@ namespace enums_and_interfaces
     class Caravan : ITransport
     {
         public string sender { get; set; }
-        public string customer { get; set; }
         public string city { get; set; }
         public string cargo { get; set; }
-        public string caravan_master { get; set; }
         public int guards { get; set; }
 
-        public Caravan (string sender, string customer, string city, string cargo, string caravan_master, int guards)
+        public Caravan (string sender, string city, string cargo, int guards)
         {
             this.sender = sender;
-            this.customer = customer;
             this.city = city;
             this.cargo = cargo;
-            this.caravan_master = caravan_master;
             this.guards = guards;
         }
 
